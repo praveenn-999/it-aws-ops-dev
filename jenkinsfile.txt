@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'this step is bukding app'
-          
+                
 
                 
             }
@@ -29,8 +29,4 @@ pipeline {
         }
     
     }
-    
-}
-
-
-
+     }
