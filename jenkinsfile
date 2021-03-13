@@ -2,16 +2,17 @@ pipeline {
     
     agent any
     stages {
-        stage('Build') {
+        stage('Build step1') {
             steps {
                 echo 'this step is bulding app'
-
+                cat file1
+                
             }
         }
         
         stage ('test') {
-            steps {
-                echo 'now running the test'
+            steps  {
+                echo 'now running the final test'
                 fileExists 'pra99'
                 echo ' succeess'
                 
