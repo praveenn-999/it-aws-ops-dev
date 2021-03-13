@@ -1,0 +1,31 @@
+pipeline {
+    
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'this step is bulding app'
+
+            }
+        }
+        
+        stage ('test') {
+            steps {
+                echo 'now running the test'
+                fileExists 'pra99'
+                echo ' succeess'
+                
+            
+            }
+        }
+        
+        stage ('deploy') {
+            steps {
+                echo 'finally deploying the code'
+            }
+            
+        }
+    
+    }
+    
+}
