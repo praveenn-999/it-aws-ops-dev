@@ -5,8 +5,8 @@ pipeline {
         stage('Build step1') {
             steps {
                 echo 'this step is bulding app'
-                cat file1
-                
+        
+
             }
         }
         
